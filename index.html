@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biswajit Manik — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ========== NAV ========== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">BM<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certs</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow mono">Hello, World! 👋</p>
+            <h1 class="hero-name">Biswajit<br /><span class="name-accent">Manik</span></h1>
+            <p class="hero-tagline">Full-Stack Developer &amp; CSE Student<br />turning ideas into working software.</p>
+            <div class="hero-chips">
+                <span class="chip">React</span>
+                <span class="chip">Flask</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Python</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">See My Projects</a>
+                <a href="https://github.com/Gitbiswajit2004" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+            </div>
+        </div>
+        <div class="hero-terminal">
+            <div class="terminal-bar">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+                <span class="t-title mono">biswajit@dev:~</span>
+            </div>
+            <div class="terminal-body mono">
+                <p><span class="t-prompt">$</span> whoami</p>
+                <p class="t-out">Biswajit Manik</p>
+                <p><span class="t-prompt">$</span> cat skills.txt</p>
+                <p class="t-out">React · Flask · FastAPI</p>
+                <p class="t-out">PostgreSQL · Python · Java</p>
+                <p class="t-out">C · C++ · HTML/CSS/JS</p>
+                <p><span class="t-prompt">$</span> ./status.sh</p>
+                <p class="t-out t-green">✓ Currently building projects...</p>
+                <p class="t-cursor">▋</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+        <div class="container">
+            <p class="section-label mono">01 / About</p>
+            <h2 class="section-title">Who I Am</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a B.Tech Computer Science student at <strong>Swami Vivekananda University, Kolkata</strong>
+                        (Batch 2023–2027), passionate about building real, production-grade software — not just toy
+                        projects.</p>
+                    <p>I've shipped a Face Recognition Attendance System and a Hospital Management System, both using
+                        React frontends, Python backends (Flask / FastAPI), and PostgreSQL databases. I care about clean
+                        architecture, good UX, and systems that actually work.</p>
+                    <p>I speak <strong>Bengali</strong>, <strong>Hindi</strong>, and <strong>English</strong>, and I'm
+                        always learning something new.</p>
+                    <div class="about-links">
+                        <a href="https://linkedin.com/in/biswajitmanik" target="_blank" class="about-link">LinkedIn
+                            ↗</a>
+                        <a href="https://github.com/Gitbiswajit2004" target="_blank" class="about-link">GitHub ↗</a>
+                        <a href="mailto:manikbiswajit303@gmail.com" class="about-link">Email ↗</a>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card reveal">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-lbl">Full-Stack<br />Projects Shipped</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="stat-num">4</span>
+                        <span class="stat-lbl">Certificates<br />Earned</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="stat-num">3</span>
+                        <span class="stat-lbl">Years into<br />B.Tech CSE</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-lbl">Still<br />Building</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">02 / Projects</p>
+            <h2 class="section-title">Things I've Built</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-header p-header-blue">
+                        <span class="project-icon">🧑‍💼</span>
+                        <div class="project-number mono">P-01</div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Face Recognition Attendance System</h3>
+                        <p class="project-desc">An end-to-end automated attendance system using real-time face
+                            recognition. Features a desktop UI for admins, a web interface for staff, and a robust
+                            PostgreSQL backend for storing attendance records.</p>
+                        <div class="project-highlights">
+                            <span class="highlight">Real-time recognition</span>
+                            <span class="highlight">Admin dashboard</span>
+                            <span class="highlight">Auto attendance logging</span>
+                        </div>
+                        <div class="project-stack">
+                            <span class="stack-tag">React</span>
+                            <span class="stack-tag">Flask</span>
+                            <span class="stack-tag">Tkinter</span>
+                            <span class="stack-tag">PostgreSQL</span>
+                            <span class="stack-tag">OpenCV</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Gitbiswajit2004" target="_blank" class="project-link">View on
+                                GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-header p-header-purple">
+                        <span class="project-icon">🏥</span>
+                        <div class="project-number mono">P-02</div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Hospital Management System</h3>
+                        <p class="project-desc">A comprehensive hospital management platform covering patient records,
+                            doctor scheduling, appointments, and billing. Built with a FastAPI backend for high
+                            performance and a React SPA frontend.</p>
+                        <div class="project-highlights">
+                            <span class="highlight">Patient records</span>
+                            <span class="highlight">Doctor scheduling</span>
+                            <span class="highlight">Billing module</span>
+                        </div>
+                        <div class="project-stack">
+                            <span class="stack-tag">React</span>
+                            <span class="stack-tag">FastAPI</span>
+                            <span class="stack-tag">PostgreSQL</span>
+                            <span class="stack-tag">Python</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Gitbiswajit2004" target="_blank" class="project-link">View on
+                                GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Always Building Card -->
+                <div class="project-card project-card-building reveal">
+                    <div class="building-inner">
+                        <div class="building-pulse"></div>
+                        <span class="building-icon">⚙️</span>
+                        <h3 class="building-title">Continuously Building…</h3>
+                        <p class="building-desc">More projects in progress. I'm always working on something new — follow
+                            my GitHub to stay updated.</p>
+                        <a href="https://github.com/Gitbiswajit2004" target="_blank" class="btn btn-ghost btn-sm">Follow
+                            on GitHub ↗</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <p class="section-label mono">03 / Skills</p>
+            <h2 class="section-title">What I Work With</h2>
+            <div class="skills-grid">
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">HTML / CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Frontend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Tkinter</span>
+                        <span class="skill-pill">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Backend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Flask</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Database</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Tools</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git &amp; GitHub</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Excel</span>
+                        <span class="skill-pill">PowerPoint</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Languages Spoken</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Bengali</span>
+                        <span class="skill-pill">Hindi</span>
+                        <span class="skill-pill">English</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATES ========== -->
+    <section id="certificates" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">04 / Certificates</p>
+            <h2 class="section-title">Credentials</h2>
+            <div class="certs-grid">
+
+                <div class="cert-card reveal">
+                    <div class="cert-badge">🎓</div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">Software Engineering</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-type">Online Certification</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-badge">🐍</div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">Python Programming Training</h3>
+                        <p class="cert-issuer">Academy of Skill Development</p>
+                        <p class="cert-type">Professional Training</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-badge">📊</div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">30-Days Excel Crash Course</h3>
+                        <p class="cert-issuer">SkillCourse E-Learning (ISO 9001)</p>
+                        <p class="cert-type cert-date">Completed: September 13, 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-badge">📈</div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">National Financial Literacy Quiz 2026</h3>
+                        <p class="cert-issuer">NISM / SEBI</p>
+                        <p class="cert-type">Certificate of Participation — College Round</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <p class="section-label mono">05 / Contact</p>
+            <h2 class="section-title">Let's Talk</h2>
+            <div class="contact-wrap">
+                <div class="contact-left">
+                    <p class="contact-blurb">Whether you want to collaborate on a project, offer an internship, or just
+                        say hi — my inbox is open.</p>
+                    <div class="contact-details">
+                        <a href="mailto:manikbiswajit303@gmail.com" class="contact-detail">
+                            <span class="cd-icon">✉️</span>
+                            <span>manikbiswajit303@gmail.com</span>
+                        </a>
+                        <a href="tel:9832752658" class="contact-detail">
+                            <span class="cd-icon">📞</span>
+                            <span>+91 9832752658</span>
+                        </a>
+                        <div class="contact-detail">
+                            <span class="cd-icon">📍</span>
+                            <span>Kolkata, West Bengal, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Gitbiswajit2004" target="_blank" class="social-btn">GitHub</a>
+                        <a href="https://linkedin.com/in/biswajitmanik" target="_blank" class="social-btn">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-form-alt">
+                    <div class="form-alt-icon">📬</div>
+                    <h3 class="form-alt-title">Send me a message</h3>
+                    <p class="form-alt-desc">Fill out a quick form and I'll get back to you as soon as possible. Takes
+                        less than a minute.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsp5YDRQrwjs70b2GyyxB_maCwkko9CdX3eIg2PTeb43wwkA/viewform?usp=publish-editor"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+                        Open Contact Form ↗
+                    </a>
+                    <p class="form-alt-hint mono">Opens in a new tab · Powered by Google Forms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">BM<span class="dot">.</span></div>
+            <p class="footer-text mono">Designed &amp; built by Biswajit Manik · Kolkata, India</p>
+            <p class="footer-text mono footer-building">⚙️ &nbsp;Continuously building projects…</p>
+            <div class="footer-links">
+                <a href="https://github.com/Gitbiswajit2004" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/biswajitmanik" target="_blank">LinkedIn</a>
+                <a href="mailto:manikbiswajit303@gmail.com">Email</a>
+            </div>
+            <p class="footer-copy">© 2026 Biswajit Manik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
